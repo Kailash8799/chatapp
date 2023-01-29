@@ -5,7 +5,7 @@ $myid=$_POST['key'];
 
                                     $sql="SELECT * FROM chat WHERE (to_id=$id AND from_id=$myid) OR (to_id=$myid AND from_id=$id) ";
                                     $result=$link->query($sql);
-
+ 
                                     while($row2=$result->fetch_assoc()){
                                 
                                 if($row2['from_id']==$myid){
